@@ -1,0 +1,11 @@
+.slider__desciption {
+    display: none;
+}
+#slider .slide_image {
+    &.desktop {
+        display: none;
+    }
+    &.mobile {
+        display: block;
+    }
+}
