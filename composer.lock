@@ -677,7 +677,7 @@
             "require-dev": {
                 "doctrine/coding-standard": "^6.0",
                 "phpstan/phpstan": "^0.11.8",
-                "phpunit/phpunit": "^8.2"
+                "phpunit/phpunit": "^8.0"
             },
             "type": "library",
             "extra": {
@@ -1485,7 +1485,7 @@
             },
             "require": {
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^7.3 || ~8.0.0",
+                "php": "^7.3 | ^8.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0"
             },
@@ -1586,7 +1586,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3 || ^8.0"
+                "php": "^7.3 | ^8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
@@ -1881,7 +1881,7 @@
                 "laminas/laminas-diactoros": "^2.2",
                 "league/oauth2-server": "^8.0",
                 "nyholm/psr7": "^1.0",
-                "php": "^7.2",
+                "php": "^7.3|^8.0",
                 "phpseclib/phpseclib": "^2.0",
                 "symfony/psr-http-message-bridge": "^2.0"
             },
@@ -2068,7 +2068,7 @@
         },
         {
             "name": "lcobucci/jwt",
-            "version": "3.3.3",
+            "version": "4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
@@ -2083,13 +2083,13 @@
             "require": {
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
-                "php": "^5.6 || ^7.0"
+                "php": "^7.3|^8.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.5",
                 "phpmd/phpmd": "~2.2",
                 "phpunit/php-invoker": "~1.1",
-                "phpunit/phpunit": "^5.7 || ^7.3",
+                "phpunit/phpunit": "^7.3|^8.0",
                 "squizlabs/php_codesniffer": "~2.3"
             },
             "type": "library",
@@ -2307,7 +2307,7 @@
             "require": {
                 "ext-fileinfo": "*",
                 "league/mime-type-detection": "^1.3",
-                "php": "^7.2.5 || ^8.0"
+                "php": "^7.2.5 | ^8.0"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
@@ -2509,7 +2509,7 @@
                 "defuse/php-encryption": "^2.2.1",
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "lcobucci/jwt": "^3.3.1",
+                "lcobucci/jwt": "^4.1.5",
                 "league/event": "^2.2",
                 "php": ">=7.2.0",
                 "psr/http-message": "^1.0.1"
@@ -7056,7 +7056,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^7.3|^8.0"
             },
             "require-dev": {
                 "ext-intl": "*",
@@ -7148,75 +7148,6 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
-            "name": "itsgoingd/clockwork",
-            "version": "v4.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/itsgoingd/clockwork.git",
-                "reference": "0dc2e5be39de88b18719bb4f3cdacfa605ad2146"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/itsgoingd/clockwork/zipball/0dc2e5be39de88b18719bb4f3cdacfa605ad2146",
-                "reference": "0dc2e5be39de88b18719bb4f3cdacfa605ad2146",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=5.5",
-                "psr/log": "1.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Clockwork\\Support\\Laravel\\ClockworkServiceProvider"
-                    ],
-                    "aliases": {
-                        "Clockwork": "Clockwork\\Support\\Laravel\\Facade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Clockwork\\": "Clockwork/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "itsgoingd",
-                    "email": "itsgoingd@luzer.sk",
-                    "homepage": "https://twitter.com/itsgoingd"
-                }
-            ],
-            "description": "php dev tools integrated to your browser",
-            "homepage": "https://underground.works/clockwork",
-            "keywords": [
-                "Devtools",
-                "debugging",
-                "laravel",
-                "logging",
-                "lumen",
-                "profiling",
-                "slim"
-            ],
-            "support": {
-                "issues": "https://github.com/itsgoingd/clockwork/issues",
-                "source": "https://github.com/itsgoingd/clockwork/tree/v4.1.8"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/itsgoingd",
-                    "type": "github"
-                }
-            ],
-            "time": "2020-09-17T19:21:25+00:00"
-        },
-        {
             "name": "mockery/mockery",
             "version": "1.4.3",
             "source": {
@@ -7233,7 +7164,7 @@
             "require": {
                 "hamcrest/hamcrest-php": "^2.0.1",
                 "lib-pcre": ">=7.0",
-                "php": "^7.3 || ^8.0"
+                "php": "^7.3 | ^8.0"
             },
             "conflict": {
                 "phpunit/phpunit": "<8.0"
@@ -7363,7 +7294,7 @@
             "require": {
                 "facade/ignition-contracts": "^1.0",
                 "filp/whoops": "^2.4",
-                "php": "^7.2.5 || ^8.0",
+                "php": "^7.2.5 | ^8.0",
                 "symfony/console": "^5.0"
             },
             "require-dev": {
@@ -7371,7 +7302,7 @@
                 "fideloper/proxy": "^4.2",
                 "friendsofphp/php-cs-fixer": "^2.16",
                 "fruitcake/laravel-cors": "^1.0",
-                "laravel/framework": "^7.0",
+                "laravel/framework": "^7.30.4",
                 "laravel/tinker": "^2.0",
                 "nunomaduro/larastan": "^0.6",
                 "orchestra/testbench": "^5.0",
@@ -7797,7 +7728,7 @@
                 "theseer/tokenizer": "^1.1.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.2.2"
+                "phpunit/phpunit": "^8.0.2"
             },
             "suggest": {
                 "ext-xdebug": "^2.7.2"
@@ -8023,7 +7954,7 @@
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "^7.3 || ^8.0"
+                "php": "^7.3 | ^8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.0"
@@ -8808,7 +8739,7 @@
                 "php": ">=7.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.2"
+                "phpunit/phpunit": "^8.0"
             },
             "type": "library",
             "extra": {
@@ -9010,7 +8941,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.3|^8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
