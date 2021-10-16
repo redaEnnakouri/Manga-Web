@@ -1,0 +1,21 @@
+{
+    "id": "Manga-Web",
+    "name": "Manga-Web",
+    "letter": "n",
+    "features": [
+        "logo",
+        "artists",
+        "tags",
+        "groups",
+        "categories",
+        "relationships",
+        "parodies",
+        "characters",
+        "languages",
+        "dmca"
+    ],
+    "social": [
+        "https://github.com/redaEnnakouri/Manga-Web",
+        "https://github.com/redaEnnakouri/Manga-Web
+    ]
+}
