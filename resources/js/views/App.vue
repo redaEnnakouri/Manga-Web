@@ -14,9 +14,7 @@
                         <router-link v-if="$site.features.includes('characters')" :to="{name: 'characters'}" class="nav-item nav-link"><star-icon/> {{ $t("app.characters") }}</router-link>
                         <router-link v-if="$site.features.includes('artists')" :to="{name: 'artists'}" class="nav-item nav-link"><image-icon/> {{ $t("app.artists") }}</router-link>
                         <router-link v-if="$site.features.includes('authors')" :to="{name: 'authors'}" class="nav-item nav-link"><book-open-icon/> {{ $t("app.authors") }}</router-link>
-                        <a v-if="['nhentai', 'pcomix', 'hentaihand'].includes($site.id)" href="https://rebrand.ly/NhentaiClicker" class="nav-item nav-link" rel="nofollow" target="_blank">Free Hentai Games</a>
-                        <a v-if="['nhentai', 'pcomix', 'hentaihand'].includes($site.id)" href="https://theporndude.com/" class="nav-item nav-link" rel="nofollow" target="_blank">PornDude</a>
-                        <a v-if="$site.id === 'nhentai'" href="https://hentaisphere.com/" class="nav-item nav-link" target="_blank">nHentai App</a>
+                        <a v-if="$site.id === 'Manga-Web'" href="https://Manga-Web.com/" class="nav-item nav-link" target="_blank">Manga-Web App</a>
                     </div>
                     <div class="navbar-nav flex-row order-2 order-lg-3">
                         <a href="#navbar" class="nav-item nav-link d-lg-none" data-toggle="collapse" data-target="#navbar"><menu-icon/></a>

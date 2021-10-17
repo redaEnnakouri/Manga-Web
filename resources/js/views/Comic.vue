@@ -9,7 +9,7 @@
                 <div v-else-if="status.comic == 'error'" class="box text-center py-5 w-100">{{ $t('app.something_went_wrong') }}</div>
                 <template v-else>
                     <div class="comic-card box mb-4">
-                        <div class="comic-sauce" v-if="$site.id === 'nhentai'">
+                        <div class="comic-sauce" v-if="$site.id === 'Manga-Web'">
                             <span :class="{ expanded }" @click="expanded=true; copy(comic.id)">Sauce <strong>{{ comic.id }}</strong></span>
                         </div>
                         <div class="comic-image my-4">

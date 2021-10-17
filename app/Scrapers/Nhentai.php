@@ -9,7 +9,7 @@ class Nhentai extends Scraper
 {
     public function getPageCount($tries = 3)
     {
-        $crawler = $this->client->request('GET', 'https://nhentai.net/');
+        $crawler = $this->client->request('GET', 'http://mangaweb.local/');
         if (!$crawler->filter('.pagination > a.last')->count()) {
             if (!$tries) return false;
             logger('The "'.$this->proxy.'" proxy fails - got response code '.@$this->client->getInternalResponse()->getStatus());
@@ -22,7 +22,7 @@ class Nhentai extends Scraper
 
     public function getComics($page)
     {
-        $crawler = $this->client->request('GET', 'https://nhentai.net/?page='.$page);
+        $crawler = $this->client->request('GET', 'http://mangaweb.local/?page='.$page);
         $comics = [];
         $crawler->filter('#content > .container > .gallery')->each(function ($node) use (&$comics) {
             $comics[] = [
@@ -96,8 +96,8 @@ class Nhentai extends Scraper
             $gallery = Str::afterLast(Str::beforeLast($url, '/'), '/');
             $ext = pathinfo($url, PATHINFO_EXTENSION);
             $page = Str::before(Str::afterLast($url, '/'), 't.');
-            $image['source'] = "https://i.nhentai.net/galleries/{$gallery}/{$page}.{$ext}";
-            $image['thumbnail'] = "https://t.nhentai.net/galleries/{$gallery}/{$page}t.{$ext}";
+            $image['source'] = "http://mangaweb.local/galleries/{$gallery}/{$page}.{$ext}";
+            $image['thumbnail'] = "http://mangaweb.local/galleries/{$gallery}/{$page}t.{$ext}";
             $images[] = $image;
         });
         $comic['images'] = $images;

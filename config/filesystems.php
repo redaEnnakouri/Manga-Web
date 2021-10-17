@@ -17,7 +17,7 @@ return [
 
     'usecdn' => env('USE_CDN', false),
 
-    'cdnlink' => env('CDN_URL', 'https://cdn.nhentai.com'),
+    'cdnlink' => env('CDN_URL', 'http://mangaweb.local/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -76,7 +76,7 @@ return [
             'url' => env('AWS_URL'),
         ],
         'cdn' => [
-            'base_url' => env('CEPH_BASE_URL', 'https://cdn.nhentai.com'),
+            'base_url' => env('CEPH_BASE_URL', 'http://mangaweb.local/'),
             'driver' => 'ceph',
             'key' => env('CEPH_ACCESS_KEY', 'GUOCNAS7EIDEYDBQHGMB'),
             'credentials' => [
