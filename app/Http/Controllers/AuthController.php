@@ -10,8 +10,8 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Carbon\Carbon;
 use Avatar;
+use Illuminate\Support\Facades\Storage;
 use Image;
-use Storage;
 
 class AuthController extends Controller
 {
