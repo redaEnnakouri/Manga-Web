@@ -1,0 +1,84 @@
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue:    #5e72e4 !default;
+$indigo:  #5603ad !default;
+$purple:  #8965e0 !default;
+$pink:    #f3a4b5 !default;
+$red:     #f5365c !default;
+$orange:  #fb6340 !default;
+$yellow:  #ffd600 !default;
+$green:   #2dce89 !default;
+$teal:    #11cdef !default;
+$cyan:    #2bffc6 !default;
+$black:   #1a191e !default;
+$dark:    #231f2a !default;
+$white:   #fff !default;
+$gray:    #332f39 !default;
+$light:   rgba(255, 255, 255, 0.8) !default;
+
+$theme-colors: (
+  "black": $black,
+  "dark": $dark,
+  "default": $gray,
+  "red": $red
+);
+
+$modal-lg: 600px !default;
+$modal-md: 500px !default;
+$modal-sm: 380px !default;
+
+$close-color: $white;
+$modal-header-border-color: $gray;
+
+$alert-padding-y: 1rem !default;
+$alert-padding-x: 1.5rem !default;
+$alert-border-radius: .25rem !default;
+
+$alert-bg-level: -2 !default;
+$alert-border-level: -2 !default;
+$alert-color-level: 0 !default;
+
+$input-focus-box-shadow: none;
+$input-btn-focus-box-shadow: none;
+
+$font-weight-normal: 600;
+$font-weight-base: 400;
+
+// Body
+$body-bg: $black;
+$body-color: $white;
+
+$navbar-dark-color: rgba($white, .8) !default;
+$navbar-dark-hover-color: rgba($white, .9) !default;
+
+$link-color: $white;
+$btn-font-weight: 700;
+$card-bg: #1f1c25;
+$input-group-addon-bg: $gray;
+$input-group-addon-color: $light;
+$input-bg: $gray;
+$input-color: $white;
+$input-placeholder-color: $light;
+$text-muted: $light;
+$pagination-bg: $dark;
+$pagination-hover-bg: $dark;
+$pagination-disabled-bg: $dark;
+$pagination-border-color: $dark;
+$pagination-hover-border-color: $dark;
+$pagination-disabled-border-color: $dark;
+
+$dropdown-color: $white;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: #423e47;
+$dropdown-link-active-bg: theme-color("primary");
+$dropdown-divider-bg: #423e47;
+$hr-border-color: rgba($white, .1);
+$custom-file-button-bg: rgba($white, .1);
+$dropdown-header-color: #c6c6c6;
+$progress-bg: rgba($white, .1);

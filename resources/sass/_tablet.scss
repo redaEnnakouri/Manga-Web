@@ -1,0 +1,28 @@
+.nav-item {
+    margin-left: 10px;
+}
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
+}
+.box {
+    &.filters {
+        flex-direction: column;
+        h6 {
+            width: 100%;
+        }
+        input.filter {
+            width: 100%;
+        }
+        .filter {
+            margin: 10px 10px 0px 0px;
+        }
+    }
+}
+#slider .slide_details {
+    .slide_text {
+        font-size: 0.9rem;
+    }
+    .slide_headline {
+        font-size: 1.5rem;
+    }
+}

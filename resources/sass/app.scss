@@ -1,0 +1,14 @@
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import 'node_modules/vue-multiselect/dist/vue-multiselect.min';
+@import "~bootstrap/scss/functions";
+@import 'variables';
+@import 'bootstrap';
+
+@import 'core';
+@import 'editor';
+@media (max-width: 992px) {
+    @import 'tablet';
+}
+@media (max-width: 768px) {
+    @import 'mobile';
+}

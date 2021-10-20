@@ -1,0 +1,68 @@
+@import '~easymde/dist/easymde.min.css';
+
+.markdown-editor {
+    background: $dark;
+    border: 1px solid theme-color("default");
+    border-radius: 4px;
+    .CodeMirror {
+        background: theme-color("default");
+        color: $white;
+        .CodeMirror-cursor {
+            border-color: $white;
+        }
+        .editor-preview {
+            background: theme-color("default");
+        }
+    }
+    .cm-header {
+    font-weight: initial;
+    }
+    .cm-header-1 {
+        font-size: 2.25rem;
+        line-height: 1.2;
+    }
+    .cm-quote {
+        font-style: initial;
+    }
+    .CodeMirror {
+        border-radius: 4px 4px 0 0;
+        border: 0;
+    }
+    .toolbar {
+        padding: 5px;
+        button {
+            border: 0;
+            svg {
+                fill: currentColor;
+                width: 1.1em;
+                height: 1.1em;
+            }
+        }
+        .toolbar-action {
+            padding: 4px 15px;
+            vertical-align: initial;
+            .spinner-border {
+                margin: 0px 30px;
+                vertical-align: sub;
+            }
+        }
+        .toolbar-button {
+            background: none;
+            padding: 4px 8px;
+            color: rgb(125, 125, 125);
+            font-weight: 700;
+            outline: none;
+            transition: .2s all;
+            &:hover {
+                background: theme-color("default");
+                border-radius: 3px;
+            }
+            &.active {
+                background: theme-color("default");
+            }
+            &[disabled] {
+                color: rgb(183, 183, 183);
+            }
+        }
+    }
+}
